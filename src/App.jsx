@@ -98,6 +98,15 @@ function App() {
       </div>
 
       <div className="feed">
+
+        {activeTab === "Public" && (
+            <img
+              src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFyfGVufDB8fDB8fHww"
+              alt="Bar banner"
+              className="banner-image"
+            />
+          )}
+        
         {activeTab === "Public" ? renderPosts(publicPosts) : renderFriendsTab()}
       </div>
 
