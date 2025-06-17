@@ -47,7 +47,9 @@ function App() {
           <div>•••</div>
         </div>
         <div className="post-content">{post.content}</div>
-        {post.image && <img className="post-image" src={post.image} alt="" />}
+        <!--{post.image && <img className="post-image" src={post.image} alt="" />}-->
+        <img src = "https://images.unsplash.com/photo-1543007630-9710e4a00a20?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFyfGVufDB8fDB8fHww" alt = "Banner" className = "hero-image"/>
+          
         <div className="post-reactions">
           <span>❤️ {post.likes}</span>
           <span>💬 {post.comments}</span>
